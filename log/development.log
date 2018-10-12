@@ -1466,3 +1466,1197 @@ Started GET "/assets/tictactoe.self-ec01d8bb7c6f01356437be0768d96c1879a5274b6fb8
 
 
 Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 08:53:53 -0700
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 16:08:56.450300"], ["updated_at", "2018-10-12 16:08:56.450300"]]
+  [1m[36m (20.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["state", "---\n- X\n- O\n- X\n- ''\n- O\n- O\n- X\n- ''\n- X\n"], ["created_at", "2018-10-12 16:11:33.948296"], ["updated_at", "2018-10-12 16:11:33.948296"]]
+  [1m[35m (14.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)  [["state", "---\n- X\n- O\n- ''\n- ''\n- O\n- O\n- X\n- ''\n- X\n"], ["created_at", "2018-10-12 16:11:33.978988"], ["updated_at", "2018-10-12 16:11:33.978988"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["state", "---\n- ''\n- O\n- X\n- ''\n- X\n- O\n- ''\n- ''\n- X\n"], ["created_at", "2018-10-12 16:11:33.989354"], ["updated_at", "2018-10-12 16:11:33.989354"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36mGame Load (1.9ms)[0m  [1mSELECT "games".* FROM "games"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:12:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (2.6ms)
+Completed 200 OK in 553ms (Views: 538.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:12:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:12:55 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:12:55 -0700
+
+
+Started GET "/assets/tictactoe.self-ec01d8bb7c6f01356437be0768d96c1879a5274b6fb8edd6b9f70abeeec20811.js?body=1" for 127.0.0.1 at 2018-10-12 09:12:55 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:12:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:15:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 203ms (Views: 202.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:15:47 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:15:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:15:47 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:15:47 -0700
+
+
+Started GET "/assets/tictactoe.self-cf151769018feb27e63f265c458fe79f1cc0a25a0026cafc75edda790752ff71.js?body=1" for 127.0.0.1 at 2018-10-12 09:15:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:50:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (4.3ms)
+Completed 200 OK in 981ms (Views: 953.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-f0f24b2a16dad7e112e8a8e70b08fa65b60f2fcaa0cf5bede866aa806ab0bf7e.js?body=1" for 127.0.0.1 at 2018-10-12 09:50:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:51:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:51:13 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:13 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:13 -0700
+
+
+Started GET "/assets/tictactoe.self-ba71a8049d9744422cc910400eb86531534490ade8fb6e1215cade2e2d2f8fe2.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["state", "---\n- X\n- O\n- X\n- ''\n- O\n- O\n- X\n- ''\n- X\n"], ["created_at", "2018-10-12 16:51:44.907357"], ["updated_at", "2018-10-12 16:51:44.907357"]]
+  [1m[35m (14.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)  [["state", "---\n- X\n- O\n- ''\n- ''\n- O\n- O\n- X\n- ''\n- X\n"], ["created_at", "2018-10-12 16:51:44.933199"], ["updated_at", "2018-10-12 16:51:44.933199"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "games" ("state", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["state", "---\n- ''\n- O\n- X\n- ''\n- X\n- O\n- ''\n- ''\n- X\n"], ["created_at", "2018-10-12 16:51:44.944091"], ["updated_at", "2018-10-12 16:51:44.944091"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:51:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (2.4ms)
+Completed 200 OK in 457ms (Views: 444.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:51:53 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:53 -0700
+
+
+Started GET "/assets/tictactoe.self-ba71a8049d9744422cc910400eb86531534490ade8fb6e1215cade2e2d2f8fe2.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:53 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:51:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 189ms (Views: 188.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+
+
+Started GET "/assets/tictactoe.self-f285c875c919338b84585f9426ce4e404d025e06eb3f740d2f22f72404eabb0b.js?body=1" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:52:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:53:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 178ms (Views: 177.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:53:38 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:53:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:53:38 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:53:38 -0700
+
+
+Started GET "/assets/tictactoe.self-1904a5214592fd69a880082a3262a98869dac571947694ac2469a4d0f451c0c7.js?body=1" for 127.0.0.1 at 2018-10-12 09:53:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:54:02 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 211ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:54:03 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:54:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:54:03 -0700
+
+
+Started GET "/assets/tictactoe.self-82d74b54f1c5b1a661a0281199a785e66cecadfa90aa5bfed4fbc6c4ec2a8894.js?body=1" for 127.0.0.1 at 2018-10-12 09:54:03 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:54:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 197ms (Views: 196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+
+
+Started GET "/assets/tictactoe.self-f6600ae9c232bfa00f8efdda64bf459a207abccb37b180333e32bf31a0ccf7a5.js?body=1" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:55:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:56:28 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 188ms (Views: 187.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:56:29 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:29 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:29 -0700
+
+
+Started GET "/assets/tictactoe.self-b02a87c25763f51f96a0eea3c46558ffb19d1d1b9fca6617763bd702f78025d5.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:56:46 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 200ms (Views: 198.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:56:47 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:47 -0700
+
+
+Started GET "/assets/tictactoe.self-74c9bd2d167632c50396ca2b0335afc637d4b84e519361c057993945ac20fa65.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:47 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:56:47 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 09:57:37 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 16:57:37.116324"], ["updated_at", "2018-10-12 16:57:37.116324"]]
+  [1m[35m (12.4ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (7.93ms)
+Completed 201 Created in 116ms (Views: 52.9ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 09:59:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 09:59:53 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 09:59:53 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 09:59:53 -0700
+
+
+Started GET "/assets/tictactoe.self-74c9bd2d167632c50396ca2b0335afc637d4b84e519361c057993945ac20fa65.js?body=1" for 127.0.0.1 at 2018-10-12 09:59:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 09:59:53 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 09:59:59 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 16:59:59.984579"], ["updated_at", "2018-10-12 16:59:59.984579"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.86ms)
+Completed 201 Created in 19ms (Views: 3.8ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+
+
+Started GET "/assets/tictactoe.self-74c9bd2d167632c50396ca2b0335afc637d4b84e519361c057993945ac20fa65.js?body=1" for 127.0.0.1 at 2018-10-12 10:01:53 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:01:57 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 17:01:57.860712"], ["updated_at", "2018-10-12 17:01:57.860712"]]
+  [1m[35m (6.2ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.84ms)
+Completed 201 Created in 19ms (Views: 3.6ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:02:29 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 200ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:02:30 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:30 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:30 -0700
+
+
+Started GET "/assets/tictactoe.self-2cbffbc43fd7372d74270b675d2d2b87fca689651d06d3ca0f17aa2d28e6dabc.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:02:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:02:34 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:34 -0700
+
+
+Started GET "/assets/tictactoe.self-2cbffbc43fd7372d74270b675d2d2b87fca689651d06d3ca0f17aa2d28e6dabc.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:34 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:02:34 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:02:39 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:02:39.458202"], ["updated_at", "2018-10-12 17:02:39.458202"]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.07ms)
+Completed 201 Created in 18ms (Views: 1.6ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 225ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+
+
+Started GET "/assets/tictactoe.self-e90062a258cefb11e2e7de20f296612f966d4db34eaea1a9a2a1f3fce8c41181.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:06 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:13:18 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 17:13:18.547001"], ["updated_at", "2018-10-12 17:13:18.547001"]]
+  [1m[35m (5.4ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.9ms)
+Completed 201 Created in 23ms (Views: 5.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:13:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:13:26 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:27 -0700
+
+
+Started GET "/assets/tictactoe.self-e90062a258cefb11e2e7de20f296612f966d4db34eaea1a9a2a1f3fce8c41181.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:27 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 327ms (Views: 326.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+
+
+Started GET "/assets/tictactoe.self-4b0244a5ad9110b32dd2dff2975767bc9bc719d1733263b0800b0f894e031656.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:13:37 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:13:42 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:13:42.264429"], ["updated_at", "2018-10-12 17:13:42.264429"]]
+  [1m[36m (15.4ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.89ms)
+Completed 201 Created in 26ms (Views: 1.4ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 186ms (Views: 185.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+
+
+Started GET "/assets/tictactoe.self-3074adcfb201b325fb7dc81ae2b74605d2e74ab8731684834b67b5c615c57ab2.js?body=1" for 127.0.0.1 at 2018-10-12 10:14:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 194ms (Views: 193.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:15:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:16:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (3.7ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:16:13 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:13 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:13 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:13 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:16:15 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 17:16:15.357383"], ["updated_at", "2018-10-12 17:16:15.357383"]]
+  [1m[35m (6.6ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.91ms)
+Completed 201 Created in 16ms (Views: 3.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:16:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:16:18 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:18 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:19 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:16:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:17:30 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:17:31 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:17:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:17:31 -0700
+
+
+Started GET "/assets/tictactoe.self-70dda0ead4d31f751f3103165efbb59dec6fea0f3a13d0f5c34783de4d4bb267.js?body=1" for 127.0.0.1 at 2018-10-12 10:17:31 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:17:31 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 192ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+
+
+Started GET "/assets/tictactoe.self-43183fa914138629a641735afd2c86542be6a6792a769ac21c2a84983608c65c.js?body=1" for 127.0.0.1 at 2018-10-12 10:21:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:28:01 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 234ms (Views: 229.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:28:02 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:02 -0700
+
+
+Started GET "/assets/tictactoe.self-d094db5a510d8468cec2f2640d7fdc3e58a3d599911cb2f68e319d5138f2a996.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:02 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:02 -0700
+
+
+Started GET "/assets/tictactoe.self-43183fa914138629a641735afd2c86542be6a6792a769ac21c2a84983608c65c.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+
+
+Started GET "/assets/tictactoe.self-d094db5a510d8468cec2f2640d7fdc3e58a3d599911cb2f68e319d5138f2a996.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:28:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:33:56 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:33:57 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:33:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:33:57 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:33:57 -0700
+
+
+Started GET "/assets/tictactoe.self-0f7f7288409173d56c604d000ad53bfe6ace5953667ae200190fb3a2b461cefb.js?body=1" for 127.0.0.1 at 2018-10-12 10:33:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 203ms (Views: 202.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+
+
+Started GET "/assets/tictactoe.self-39983a42c4466be0bb13fc8c5b1b0caa5bc3ced09c6c80ca9863a9fef2c013b7.js?body=1" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:35:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+
+
+Started GET "/assets/tictactoe.self-39983a42c4466be0bb13fc8c5b1b0caa5bc3ced09c6c80ca9863a9fef2c013b7.js?body=1" for 127.0.0.1 at 2018-10-12 10:36:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:39:15 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 132ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:39:16 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:39:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:39:16 -0700
+
+
+Started GET "/assets/tictactoe.self-aeb1d6d9ebae70c5ce2ed80a51133ec37d529e64ffbce8e6996e13bbdc86fe3c.js?body=1" for 127.0.0.1 at 2018-10-12 10:39:16 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:39:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+
+
+Started GET "/assets/tictactoe.self-aeb1d6d9ebae70c5ce2ed80a51133ec37d529e64ffbce8e6996e13bbdc86fe3c.js?body=1" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:47:48 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 200ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+
+
+Started GET "/assets/tictactoe.self-6dc47cc19400751365aa6087c186940aed57ebe5f8784e3a241eaa83d0dd80db.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+
+
+Started GET "/assets/tictactoe.self-6dc47cc19400751365aa6087c186940aed57ebe5f8784e3a241eaa83d0dd80db.js?body=1" for 127.0.0.1 at 2018-10-12 10:48:47 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:49:04 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:49:04.388407"], ["updated_at", "2018-10-12 17:49:04.388407"]]
+  [1m[36m (16.7ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.84ms)
+Completed 201 Created in 30ms (Views: 3.9ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-12 10:49:06 -0700
+Processing by GamesController#index as */*
+  [1m[35mGame Load (0.3ms)[0m  SELECT "games".* FROM "games"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (31.04ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:49:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 182ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:49:53 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:49:53 -0700
+
+
+Started GET "/assets/tictactoe.self-51e7af1b2a453258132533571f8918e320e4bce2b32b6de814a77a548135812f.js?body=1" for 127.0.0.1 at 2018-10-12 10:49:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:49:53 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:49:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 183ms (Views: 182.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+
+
+Started GET "/assets/tictactoe.self-bd6ab7fc951dd9d926d4be230698e6394cd4b49d15ce796a2fb58bfdf09be465.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:12 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:51:21 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:51:21.877759"], ["updated_at", "2018-10-12 17:51:21.877759"]]
+  [1m[36m (17.3ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.11ms)
+Completed 201 Created in 26ms (Views: 1.6ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-12 10:51:30 -0700
+Processing by GamesController#index as */*
+  [1m[35mGame Load (0.3ms)[0m  SELECT "games".* FROM "games"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (22.84ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:51:33 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:51:33.650639"], ["updated_at", "2018-10-12 17:51:33.650639"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.84ms)
+Completed 201 Created in 18ms (Views: 1.5ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+
+
+Started GET "/assets/tictactoe.self-bd6ab7fc951dd9d926d4be230698e6394cd4b49d15ce796a2fb58bfdf09be465.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:42 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:51:54 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 17:51:54.016981"], ["updated_at", "2018-10-12 17:51:54.016981"]]
+  [1m[35m (16.5ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.86ms)
+Completed 201 Created in 27ms (Views: 1.4ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:51:55 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:51:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:56 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:56 -0700
+
+
+Started GET "/assets/tictactoe.self-bd6ab7fc951dd9d926d4be230698e6394cd4b49d15ce796a2fb58bfdf09be465.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:56 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:51:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:52:14 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:52:15 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:15 -0700
+
+
+Started GET "/assets/tictactoe.self-bd6ab7fc951dd9d926d4be230698e6394cd4b49d15ce796a2fb58bfdf09be465.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:15 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:52:22 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 52ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:52:23 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:23 -0700
+
+
+Started GET "/assets/tictactoe.self-bd6ab7fc951dd9d926d4be230698e6394cd4b49d15ce796a2fb58bfdf09be465.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:23 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:52:54 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 204ms (Views: 203.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:52:55 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:55 -0700
+
+
+Started GET "/assets/tictactoe.self-34f93b5b325cf50bfbcd48faafcd65597a66375e2dd8015657fce0dcfcb2cfaf.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:55 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:52:55 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 10:53:08 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 17:53:08.681057"], ["updated_at", "2018-10-12 17:53:08.681057"]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.85ms)
+Completed 201 Created in 27ms (Views: 1.4ms | ActiveRecord: 21.1ms)
+  [1m[36mGame Load (1.9ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "games"
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 10:58:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (1.7ms)
+Completed 200 OK in 479ms (Views: 464.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 10:58:25 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 10:58:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 10:58:25 -0700
+
+
+Started GET "/assets/tictactoe.self-34f93b5b325cf50bfbcd48faafcd65597a66375e2dd8015657fce0dcfcb2cfaf.js?body=1" for 127.0.0.1 at 2018-10-12 10:58:25 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 10:58:25 -0700
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games"  ORDER BY "games"."id" DESC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "games"
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 11:01:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (2.1ms)
+Completed 200 OK in 563ms (Views: 549.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 11:01:17 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:17 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:17 -0700
+
+
+Started GET "/assets/tictactoe.self-35809be942be7126efe441cf5f00a4c2d64ceea4e08a985c0f7f2b9f82536349.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:17 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 11:01:32 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 18:01:32.749823"], ["updated_at", "2018-10-12 18:01:32.749823"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (4.07ms)
+Completed 201 Created in 62ms (Views: 34.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 194ms (Views: 193.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+
+
+Started GET "/assets/tictactoe.self-f6c2b47a957a7c9a2c3c2d1b9b518b149bb11bdc0ebd9e2a28a1d2d0e1a6d3de.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 11:01:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+
+
+Started GET "/assets/tictactoe.self-f6c2b47a957a7c9a2c3c2d1b9b518b149bb11bdc0ebd9e2a28a1d2d0e1a6d3de.js?body=1" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 11:02:18 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 11:02:23 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 18:02:23.864041"], ["updated_at", "2018-10-12 18:02:23.864041"]]
+  [1m[36m (18.3ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.94ms)
+Completed 201 Created in 27ms (Views: 1.5ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 202ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+
+
+Started GET "/assets/tictactoe.self-74133ec4da1dcf6b2326c1cc084eda0b8ac18ea4df3f9987efbcbbefdc6d6b26.js?body=1" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 11:06:55 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 11:06:58 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-12 18:06:58.587144"], ["updated_at", "2018-10-12 18:06:58.587144"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.96ms)
+Completed 201 Created in 26ms (Views: 1.5ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 199ms (Views: 198.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+
+
+Started GET "/assets/tictactoe.self-f1199a33e21ec13e6c97c41a94eb46215fd047520f79039f2012c844e889a8d5.js?body=1" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-12 11:07:33 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-12 11:07:36 -0700
+Processing by GamesController#create as */*
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2018-10-12 18:07:36.560359"], ["updated_at", "2018-10-12 18:07:36.560359"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.58ms)
+Completed 201 Created in 18ms (Views: 2.1ms | ActiveRecord: 9.3ms)

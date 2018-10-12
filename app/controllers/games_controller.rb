@@ -10,15 +10,12 @@ class GamesController < ApplicationController
     render json: @game
   end
 
-  def create
-    set_game
-    # if @game
-    #   @game.save
-    # else
-      @game = Game.create(game_params)
-    # end
+  def create 
+  
+    game = Game.create(game_params)
+
     render json: game, status: 201
-    #binding.pry
+    
   end
 
   def update

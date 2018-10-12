@@ -13,47 +13,46 @@ function player(){
 
 
 function updateState(elementClicked){
-    $('td').on('click', function(){
-        // player returning correctly
-        // we append the token returned from player to the element clicked
-        // why can't I drop into this debugger?
-        // when running player() in browser I get the following error 
-        // ReferenceError: can't access lexical declaration `player' before initialization
-        let player = player();
-        $(elementClicked).innerText += player;
-        //debugger;
-    });
-    //debugger;
-    
-}
+        $(elementClicked).text(player());   
+};
 
 function setMessage(string){
-    $("div#message").innerHTML += string;
+    $("div#message").text(string);
+    debugger
 }
 
 function doTurn(elementClicked){
     // elementClicked is being passed as eg <td data-x="0" data-y="2">
     turn += 1;
-
+    
     updateState(elementClicked);
     checkWinner();
 }
 
-function checkWinner(game){
-    winCombos = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
-    let winner = winCombos.find(function(combo){
-        game["state"][combo[0]] === game["state"][combo[1]] && game["state"][combo[1]] === game["state"][combo[2]]
+function checkWinner() {
+    let board = {};
+    let winner = false;
+    const winning_combos = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
+  
+    $('td').text((index, square) => board[index] = square);
+  
+    winning_combos.some(function(combo) {
+      if (board[combo[0]] !== "" && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]]) {
+        setMessage(`Player ${board[combo[0]]} Won!`);
+        return winner = true;
+      }
     });
+
+    return winner;
+}
     //Returns true if the current board contains any winning combinations (three X or O tokens in a row, vertically, horizontally, or diagonally). Otherwise, returns false.
     //If there is a winning combination on the board, checkWinner() should invoke setMessage(), passing in the appropriate string based on who won: 'Player X Won!' or 'Player O Won!' 
-}
 
 
 
 function attachListeners(){
     $("td").on("click", function(){
        // When a user clicks on a square on the game board, the event listener should invoke doTurn() and pass it the element that was clicked.
-       //debugger;
        doTurn(this)
     })
 
@@ -73,10 +72,17 @@ function attachListeners(){
             var values = $(this).serialize();
 
             var posting = $.post("/games",function(data){
+                //debugger;
               // upon saving what needs to happen in the dom? 
-              // NOTHING... I believe             
+              // NOTHING... I believe 
+              // at this point we have triggered #create and generated a game id. 
+              // we assign the Currentgame id so we can reference game later;
+              currentGame = data.data["id"];
+              board = {};
+              data.data.attributes.state = $('td').text((index, square) => board[index] = square);    
+              debugger;
             });
-            debugger;
+            
         };
     // to insert an x into the first box (top left) do
     // firstRow = $("[data-y=0]") 
@@ -89,7 +95,6 @@ function attachListeners(){
                 // once we have all the games, what needs to happen in the dom?
                 // we need to create a button for each under div(#games)
                 var games = data
-                //debugger;
                 //to get state of first game we have to dig to the below
                 //games["data"][0]["attributes"]["state"] 
             });
@@ -100,6 +105,3 @@ function attachListeners(){
     // games.forEach(function (game){
     //     console.log('<ul><button id="element.id"> element.id </button><ul>')
     // });
-    // debugger;
-
- 
