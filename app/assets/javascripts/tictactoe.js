@@ -14,9 +14,7 @@ function player(){
 
 function updateState(elementClicked){
     let play = player();
-    if (elementClicked.innerText == ""){
-        $(elementClicked).text(play)
-    };
+    $(elementClicked).text(play)
 }
 
 function setMessage(string){
@@ -25,19 +23,24 @@ function setMessage(string){
 
 function doTurn(elementClicked){
     // elementClicked is being passed as eg <td data-x="0" data-y="2">
+    
+    updateState(elementClicked);
+  
     turn += 1;
-    updateState(elementClicked)
 
 
     if (checkWinner()){
-        saveGame()
-        resetBoard()
+        saveGame();
+        resetBoard();
     } else if (turn === 9){
         setMessage("Tie game.")
+        saveGame();
+        resetBoard();
     }
 }
     
 function resetBoard(){
+    //debugger;
     $("td").empty()
     turn = 0
     currentGame = 0
@@ -104,22 +107,30 @@ function attachListeners(){
                 let games = data.data;
                 let buttons = games.map(function(game){
                     
-                    return `<li> <a href='#' onClick='loadGame(${game.id})' data-id="${game.id}"> ${game.id} </a> </li>`
+                    return `<button onClick='loadGame(${game.id})' data-id="${game.id}"> ${game.id} </button><br><br>`
                 })
                 
                 //data.data[0].attributes.state returns the state of the first game
-                $("#games").append("<ul>" + buttons + "</ul>")
-               
-            })
-        }
+                if(buttons){
+                    $("#games").append(buttons)
+                }
+                
+            }
+        )}
 
     function loadGame(gamePassed){
-        var game = $.get(`games/${gamePassed}`, function(gameRequested){
+        //clear any messages that may have generated from previous games
+        $("#message").empty();
+        var game = $.get(`/games/${gamePassed}`, function(gameRequested){
             // we do the opposite of what we did in save game. 
             // we assign the td values from the gameRequested(response game)'s state.
             let state = gameRequested.data.attributes.state
             $('td').text((index, square) => state[index]);
+            currentGame = gamePassed;
+            turn = state.join('').length;
+            checkWinner();
         })
     }
+
 
 
