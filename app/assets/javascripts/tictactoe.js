@@ -79,7 +79,7 @@ function attachListeners(){
 
 
 
-// currently working on saveGame making a new game, new turn count and game etc
+
 
 ////////////////////////////////////////////BUTTONS//////////////////////////////////////////////////////////////////////////////////
 
@@ -106,7 +106,7 @@ function attachListeners(){
                 let games = data.data;
                 let buttons = games.map(function(game){
                     
-                    return `<li> <a href='#' onClick='loadGame()' data-id="${game.id}"> ${game.id} </a> </li>`
+                    return `<li> <a href='#' onClick='loadGame(${game.id})' data-id="${game.id}"> ${game.id} </a> </li>`
                 })
                 
                 //data.data[0].attributes.state returns the state of the first game
@@ -115,5 +115,10 @@ function attachListeners(){
             })
         }
 
+    function loadGame(gamePassed){
+        var game = $.get(`games/${gamePassed}`, function(gameRequested){
+            debugger;
+        })
+    }
 
 
