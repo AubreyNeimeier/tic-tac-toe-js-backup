@@ -1,7 +1,7 @@
-// Code your JavaScript / jQuery solution here
+
 /////////////////////////////////////////TTT FUNCTIONALITY ///////////////////////////////////////////////////////////////////////////
 $(document).ready(function() {
-    attachListeners();
+    attachListeners()
 })
 
 
@@ -13,36 +13,52 @@ function player(){
 
 
 function updateState(elementClicked){
-        $(elementClicked).text(player());   
-};
+    let play = player();
+    if (elementClicked.innerText == ""){
+        $(elementClicked).text(play)
+    };
+}
 
 function setMessage(string){
-    $("div#message").text(string);
-    debugger
+    $("div#message").text(string)
 }
 
 function doTurn(elementClicked){
     // elementClicked is being passed as eg <td data-x="0" data-y="2">
     turn += 1;
+    updateState(elementClicked)
+
+
+    if (checkWinner()){
+        saveGame()
+        resetBoard()
+    } else if (turn === 9){
+        setMessage("Tie game.")
+    }
+}
     
-    updateState(elementClicked);
-    checkWinner();
+function resetBoard(){
+    $("td").empty()
+    turn = 0
+    currentGame = 0
+    
 }
 
 function checkWinner() {
-    let board = {};
+    let board = {}
     let winner = false;
     const winning_combos = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
   
-    $('td').text((index, square) => board[index] = square);
+    $('td').text((index, square) => board[index] = square)
   
     winning_combos.some(function(combo) {
       if (board[combo[0]] !== "" && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]]) {
-        setMessage(`Player ${board[combo[0]]} Won!`);
-        return winner = true;
+        setMessage(`Player ${board[combo[0]]} Won!`)
+        return winner = true
       }
-    });
+    })
 
+   
     return winner;
 }
     //Returns true if the current board contains any winning combinations (three X or O tokens in a row, vertically, horizontally, or diagonally). Otherwise, returns false.
@@ -56,14 +72,14 @@ function attachListeners(){
        doTurn(this)
     })
 
-    $("#save").on('click' , () => saveGame());
-    $("#previous").on('click', () => previousGames());
+    $("#save").on('click' , () => saveGame())
+    $("#previous").on('click', () => previousGames())
     $("#clear").on("click", ()=> resetBoard())
 }
 
 
 
-
+// currently working on saveGame making a new game, new turn count and game etc
 
 ////////////////////////////////////////////BUTTONS//////////////////////////////////////////////////////////////////////////////////
 
@@ -72,15 +88,10 @@ function attachListeners(){
             var values = $(this).serialize();
 
             var posting = $.post("/games",function(data){
-                //debugger;
-              // upon saving what needs to happen in the dom? 
-              // NOTHING... I believe 
-              // at this point we have triggered #create and generated a game id. 
-              // we assign the Currentgame id so we can reference game later;
               currentGame = data.data["id"];
-              board = {};
-              data.data.attributes.state = $('td').text((index, square) => board[index] = square);    
-              debugger;
+              board = {}
+              data.data.attributes.state = $('td').text((index, square) => board[index] = square)  
+              //debugger;
             });
             
         };
@@ -92,16 +103,17 @@ function attachListeners(){
 
     function previousGames(){
                $.get("/games", function(data){
-                // once we have all the games, what needs to happen in the dom?
-                // we need to create a button for each under div(#games)
-                var games = data
-                //to get state of first game we have to dig to the below
-                //games["data"][0]["attributes"]["state"] 
-            });
-        };
+                let games = data.data;
+                let buttons = games.map(function(game){
+                    
+                    return `<li> <a href='#' onClick='loadGame()' data-id="${game.id}"> ${game.id} </a> </li>`
+                })
+                
+                //data.data[0].attributes.state returns the state of the first game
+                $("#games").append("<ul>" + buttons + "</ul>")
+               
+            })
+        }
 
 
-    
-    // games.forEach(function (game){
-    //     console.log('<ul><button id="element.id"> element.id </button><ul>')
-    // });
+
