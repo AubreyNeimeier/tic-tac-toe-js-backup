@@ -85,11 +85,9 @@ function attachListeners(){
 
 
     function saveGame(){
-            var values = $(this).serialize();
-
-            var posting = $.post("/games",function(data){
+              let posting = $.post("/games",function(data){
               currentGame = data.data["id"];
-              board = {}
+              var board = {}
               data.data.attributes.state = $('td').text((index, square) => board[index] = square)  
               //debugger;
             });
@@ -117,7 +115,10 @@ function attachListeners(){
 
     function loadGame(gamePassed){
         var game = $.get(`games/${gamePassed}`, function(gameRequested){
-            debugger;
+            // we do the opposite of what we did in save game. 
+            // we assign the td values from the gameRequested(response game)'s state.
+            let state = gameRequested.data.attributes.state
+            $('td').text((index, square) => state[index]);
         })
     }
 

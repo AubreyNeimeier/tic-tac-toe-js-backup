@@ -4526,3 +4526,295 @@ Processing by GamesController#show as */*
   [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 46]]
 [active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.11ms)
 Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:04:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (7.2ms)
+Completed 200 OK in 896ms (Views: 868.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-01a7eed8aecd7de766ccc4ee9ab8d01364926fa32aef9fb8e577e6c32e7f1b6a.js?body=1" for 127.0.0.1 at 2018-10-16 11:04:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:06:17 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 195ms (Views: 194.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-cc912ea28ac662ec5173cb7c6b5a828bf15cbdba93a437d2de908d8bbfabc24d.js?body=1" for 127.0.0.1 at 2018-10-16 11:06:17 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-16 11:06:17 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-16 11:06:17 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-16 11:06:25 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-16 18:06:25.152267"], ["updated_at", "2018-10-16 18:06:25.152267"]]
+  [1m[35m (21.7ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (9.78ms)
+Completed 201 Created in 96ms (Views: 38.4ms | ActiveRecord: 24.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:16:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 191ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-16 11:16:34 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2018-10-16 11:16:34 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-16 11:16:34 -0700
+
+
+Started GET "/assets/tictactoe.self-445e51d23533717c5f9f057adb5b4d6dc74a3f48c2231d557b3bca2ec5ee2068.js?body=1" for 127.0.0.1 at 2018-10-16 11:16:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2018-10-16 11:16:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:16:54 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:17:01 -0700
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (9.75ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:17:03 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.2ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.27ms)
+Completed 200 OK in 32ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:17:11 -0700
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (6.93ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:17:14 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (3.01ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:17:57 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-bbb574c6ebb7454122fc162b4e36f018f26a2317072a0c27e59e91bf323cf88e.js?body=1" for 127.0.0.1 at 2018-10-16 11:17:58 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2018-10-16 11:17:58 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-16 11:17:58 -0700
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:18:00 -0700
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (5.65ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:18:03 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.21ms)
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:18:11 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.2ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:22:52 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 250ms (Views: 249.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-2ba9b3af65384a47bb1163c7388a4f20f022f0e6d35612a35c4c00b2187344bb.js?body=1" for 127.0.0.1 at 2018-10-16 11:22:53 -0700
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 127.0.0.1 at 2018-10-16 11:22:53 -0700
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:22:57 -0700
+Processing by GamesController#index as */*
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (6.07ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:22:59 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.2ms)
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:23:07 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (4.2ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-16 11:24:13 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html within layouts/application (0.1ms)
+Completed 200 OK in 236ms (Views: 235.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tictactoe.self-dc3317993973fdbc403e140ba9bd29fc765aa3d5182e2bfe13148097553ff363.js?body=1" for 127.0.0.1 at 2018-10-16 11:24:13 -0700
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:24:16 -0700
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (4.2ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:24:18 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (2.67ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/47" for 127.0.0.1 at 2018-10-16 11:24:22 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"47"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 47]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.07ms)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/48" for 127.0.0.1 at 2018-10-16 11:24:23 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"48"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 48]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (3.61ms)
+Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/49" for 127.0.0.1 at 2018-10-16 11:24:25 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"49"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 49]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.77ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2018-10-16 11:24:27 -0700
+Processing by GamesController#create as */*
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36mSQL (3.7ms)[0m  [1mINSERT INTO "games" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-10-16 18:24:27.343098"], ["updated_at", "2018-10-16 18:24:27.343098"]]
+  [1m[35m (15.7ms)[0m  commit transaction
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.62ms)
+Completed 201 Created in 29ms (Views: 2.1ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2018-10-16 11:24:29 -0700
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::JsonApi (6.95ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/50" for 127.0.0.1 at 2018-10-16 11:24:31 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 50]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.52ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/49" for 127.0.0.1 at 2018-10-16 11:24:33 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"49"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 49]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (0.84ms)
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/48" for 127.0.0.1 at 2018-10-16 11:24:35 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"48"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 48]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (2.55ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/47" for 127.0.0.1 at 2018-10-16 11:24:36 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"47"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 47]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (4.12ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:24:37 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (2.2ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/48" for 127.0.0.1 at 2018-10-16 11:24:39 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"48"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 48]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.37ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/47" for 127.0.0.1 at 2018-10-16 11:24:40 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"47"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 47]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.09ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/46" for 127.0.0.1 at 2018-10-16 11:24:41 -0700
+Processing by GamesController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 46]]
+[active_model_serializers] Rendered GameSerializer with ActiveModelSerializers::Adapter::JsonApi (1.35ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.1ms)
