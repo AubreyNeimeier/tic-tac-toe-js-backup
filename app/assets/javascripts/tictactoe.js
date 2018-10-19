@@ -22,6 +22,7 @@ function setMessage(string){
 }
 
 function doTurn(elementClicked){
+    //debugger;
     // elementClicked is being passed as eg <td data-x="0" data-y="2">
     
     updateState(elementClicked);
@@ -71,8 +72,12 @@ function checkWinner() {
 
 function attachListeners(){
     $("td").on("click", function(){
+        
        // When a user clicks on a square on the game board, the event listener should invoke doTurn() and pass it the element that was clicked.
-       doTurn(this)
+       if (!$.text(this) && !checkWinner()) {
+        doTurn(this)
+       }
+       
     })
 
     $("#save").on('click' , () => saveGame())
@@ -87,15 +92,24 @@ function attachListeners(){
 ////////////////////////////////////////////BUTTONS//////////////////////////////////////////////////////////////////////////////////
 
 
-    function saveGame(){
-              let posting = $.post("/games",function(data){
-              currentGame = data.data["id"];
-              var board = {}
-              data.data.attributes.state = $('td').text((index, square) => board[index] = square)  
-              //debugger;
-            });
-            
-        };
+    function saveGame() {
+        var state = $("td").toArray().map(x => x.innerText);
+        // if the current game exists, request to patch(update) that specific game
+        if (currentGame) {
+        $.ajax({
+            type: 'PATCH',
+            url: `/games/${currentGame}`,
+            data: { state: state }
+        });
+        } else {
+        // if no currentgame exists, create a brand new request with post req to /games
+        $.post('/games', { state: state }).done(function (resp) {
+            currentGame = resp.data.id
+        })
+        }
+  }
+  
+
     // to insert an x into the first box (top left) do
     // firstRow = $("[data-y=0]") 
     // firstRow[0].innerText = "X"
@@ -105,11 +119,12 @@ function attachListeners(){
     function previousGames(){
                $.get("/games", function(data){
                 let games = data.data;
+                debugger;
                 let buttons = games.map(function(game){
                     
                     return `<button onClick='loadGame(${game.id})' data-id="${game.id}"> ${game.id} </button><br><br>`
                 })
-                
+                $("#games").empty();
                 //data.data[0].attributes.state returns the state of the first game
                 if(buttons){
                     $("#games").append(buttons)
@@ -134,3 +149,13 @@ function attachListeners(){
 
 
 
+
+//     function saveGame(){
+//         let posting = $.post("/games",function(data){
+//         currentGame = data.data["id"];
+//         var board = {}
+//         data.data.attributes.state = $('td').text((index, square) => board[index] = square)  
+//         //debugger;
+//       });
+      
+//   };
